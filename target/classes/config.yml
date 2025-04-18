@@ -1,0 +1,30 @@
+# Настройки цветов
+default-colors:
+  free: GREEN    # Цвет для свободной территории
+  your: BLUE     # Цвет для вашей территории
+  occupied: RED  # Цвет для чужой территории
+
+# Текстовые сообщения
+messages:
+  free-territory: "§aСвободная территория"
+  your-territory: "§9Ваша территория"
+  occupied-territory: "§cЗанятая территория"
+
+# Индивидуальные настройки регионов
+regions:
+  spawn:
+    name: "§6Спавн"
+    color: YELLOW
+  pvp:
+    name: "§cПВП Арена"
+    color: RED
+  shop:
+    name: "§eМагазин"
+    color: YELLOW
+
+# Настройки отображения
+display:
+  prioritize-height: true # Босс-бар выше других
+
+# Технические настройки
+update-interval: 20 # Интервал обновления в тиках (20 = 1 секунда)

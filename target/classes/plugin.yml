@@ -1,0 +1,21 @@
+name: RabbitRegionBar
+version: 1.2
+main: com.MrRabbitson.RabbitRegionBar.RabbitRegionBar
+api-version: 1.21
+authors: [MrRabbitson]
+website: https://example.com
+description: Плагин для отображения регионов с поддержкой HEX-цветов
+depend: [WorldGuard]
+softdepend: []
+prefix: RRB
+
+commands:
+  rrbreload:
+    description: Перезагружает конфигурацию плагина
+    permission: rabbitregionbar.reload
+    usage: /rrbreload
+
+permissions:
+  rabbitregionbar.reload:
+    description: Позволяет перезагружать конфиг плагина
+    default: op
