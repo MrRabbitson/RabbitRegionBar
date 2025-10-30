@@ -68,7 +68,7 @@ public class RabbitRegionBar extends JavaPlugin {
     private void loadConfig() {
         FileConfiguration config = getConfig();
 
-        // Загрузка настроек регионов
+        // загрузка конфига
         regionSettings = new HashMap<>();
         ConfigurationSection regionsSection = config.getConfigurationSection("regions");
         if (regionsSection != null) {
@@ -79,13 +79,13 @@ public class RabbitRegionBar extends JavaPlugin {
             }
         }
 
-        // Загрузка сообщений
+        // загрузка сообщений из конфига
         messages = new HashMap<>();
         messages.put("free-territory", config.getString("messages.free-territory", "§aСвободная территория"));
         messages.put("your-territory", config.getString("messages.your-territory", "§9Ваша территория"));
         messages.put("occupied-territory", config.getString("messages.occupied-territory", "§cЗанятая территория"));
 
-        // Загрузка цветов по умолчанию
+        // цвета
         defaultColors = new HashMap<>();
         defaultColors.put("free", getBarColor(config.getString("default-colors.free", "GREEN")));
         defaultColors.put("your", getBarColor(config.getString("default-colors.your", "BLUE")));
@@ -156,4 +156,5 @@ public class RabbitRegionBar extends JavaPlugin {
         saveDefaultConfig();
         loadConfig();
     }
+
 }
